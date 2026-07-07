@@ -1,5 +1,61 @@
 # JNS Pro — Field Quick Start Guide
 
+<nav id="menu" class="jump-nav">
+<details>
+<summary>☰ Menu — Jump to a Section</summary>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#how-this-system-works">How This System Works</a></li>
+<li><a href="#running-a-race">Running a Race</a></li>
+<li><a href="#session-settings">Session Settings</a></li>
+<li><a href="#live-dashboard">The Live Dashboard</a></li>
+<li><a href="#saving-sharing-results">Saving &amp; Sharing Results</a></li>
+<li><a href="#connecting-to-wifi">Connecting to WiFi</a></li>
+<li><a href="#managing-your-data">Managing Your Data</a></li>
+<li><a href="#troubleshooting">If Something Goes Wrong</a></li>
+</ul>
+</details>
+</nav>
+
+<style>
+.jump-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(120deg, #155799, #159957);
+  border-radius: 6px;
+  margin-bottom: 1.5em;
+}
+.jump-nav summary {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.7em 1em;
+}
+.jump-nav summary::-webkit-details-marker { display: none; }
+.jump-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.4em;
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+}
+.jump-nav ul li a {
+  display: block;
+  padding: 0.7em 1em;
+  color: #159957;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+.jump-nav ul li:last-child a { border-bottom: none; }
+.jump-nav ul li a:active,
+.jump-nav ul li a:hover { background: #f0f0f0; }
+.back-to-menu { text-align: right; }
+.back-to-menu a { text-decoration: none; }
+</style>
+
 *This is a quick-reference guide to get you up and running for testing. Full documentation, the external unit manuals, and training videos are coming separately — this is just enough to get riding.*
 
 **Your test setup:** Main Controller + Start Lights + Finish Timer. There is no physical Gate unit in this build yet — starts are done off a wall, a block of wood, or a track stand (more on that below). Everything is already connected and ready to go — you shouldn't need to pair anything yourself this round.
@@ -8,7 +64,7 @@
 
 ---
 
-## Getting Started
+## Getting Started {#getting-started}
 
 ### 1. What's in the Box
 - Main Controller (the touchscreen unit — this does all the thinking)
@@ -36,9 +92,11 @@ When it boots up, you'll land on the Home screen with four buttons:
 
 [PHOTO: Home screen]
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## How This System Works
+## How This System Works {#how-this-system-works}
 
 ### 4. Standalone Mode — Real Training Data With Zero External Gear
 Here's the important bit: your **reaction time**, **G-force**, and **wheelie/pitch detection** all come from a sensor built into the main controller itself. You get real, useful training data whether or not any external unit is connected at all. The external units make it more accurate and more automatic — they don't unlock the core feature.
@@ -52,9 +110,11 @@ No Gate unit this round means no physical gate to drop. That's fine — you alre
 ### 7. Adding External Units Later
 The system is built so any of the three external units — Gate, Lights, Timer — can be added independently, in any combination. Nothing about how you use the app changes based on which ones are present; the controller just automatically uses whichever units are enabled.
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## Running a Race
+## Running a Race {#running-a-race}
 
 ### 8. Quick Start: Your First Run
 1. From Home, tap **Gate**.
@@ -89,9 +149,11 @@ The screen auto-returns after about 25 seconds, or tap it to move on immediately
 ### 12. Running a Full Session (Multiple Runs)
 If Session Mode is switched on (see Settings below), the controller counts down runs (e.g. "3 of 5") automatically between attempts. On the final run of the session, you'll get a popup asking what to do with the data — see "What Happens at the End of a Session" below.
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## Session Settings
+## Session Settings {#session-settings}
 
 ### 13. Number of Runs, Distance, Volume & Brightness
 Tap the gear icon on the Gate screen to open **Gate Settings**:
@@ -109,9 +171,11 @@ Tap the gear icon on the Gate screen to open **Gate Settings**:
 
 [PHOTO: Gate Settings screen]
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## The Live Dashboard — Monitor, Control & Save from Any Phone
+## The Live Dashboard — Monitor, Control & Save from Any Phone {#live-dashboard}
 
 ### 14. Connecting to the Dashboard
 The controller broadcasts its own WiFi network for a live dashboard — no internet connection needed for this part. Connect your phone to it (details/QR code on the Gate Settings screen) and open the address shown.
@@ -127,9 +191,11 @@ The dashboard isn't just a viewer — a coach or parent can also trigger Start, 
 ### 17. Viewing and Saving Session Data from the Dashboard
 Session results are visible on the dashboard too, and can be saved from there — useful if the person managing the phone is different from whoever's running the controller trackside.
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## Saving & Sharing Results
+## Saving & Sharing Results {#saving-sharing-results}
 
 ### 18. What Happens at the End of a Session
 On the final run of a session, a popup appears with three options:
@@ -147,27 +213,33 @@ Choosing Save & Upload will briefly restart the controller to free up memory for
 
 *(Full instructions for the analytics website are in a separate document.)*
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## Connecting to WiFi
+## Connecting to WiFi {#connecting-to-wifi}
 
 ### 21. Connecting the Device to Your Home/Club WiFi
 Uploading to the analytics website needs the controller connected to a real WiFi network (separate from its own dashboard network). From Home, tap **WiFi**, pick your network, and enter the password. This only needs to be done once — it's remembered after that.
 
 [PHOTO: WiFi setup screen]
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## Managing Your Data
+## Managing Your Data {#managing-your-data}
 
 ### 22. Finding & Re-uploading Past Sessions from the SD Card
 From Home, tap **SD Card** to see a list of saved sessions. Files already uploaded are marked as such; you can upload any not-yet-uploaded file from here manually.
 
 [PHOTO: SD card file list screen]
 
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
+
 ---
 
-## If Something Goes Wrong
+## If Something Goes Wrong {#troubleshooting}
 
 ### 23. Troubleshooting Common Issues
 | Message / Symptom | What it means |
@@ -180,3 +252,5 @@ From Home, tap **SD Card** to see a list of saved sessions. Files already upload
 
 ### 24. Who to Contact for Help
 *[add contact details here]*
+
+<p class="back-to-menu"><a href="#menu">↑ Back to menu</a></p>
