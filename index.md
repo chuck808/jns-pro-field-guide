@@ -1,7 +1,7 @@
 # JNS Pro — Field Quick Start Guide
 
 <nav id="menu" class="jump-nav">
-<details>
+<details id="jump-nav-details">
 <summary>☰ Menu — Jump to a Section</summary>
 <ul>
 <li><a href="#getting-started">Getting Started</a></li>
@@ -16,6 +16,19 @@
 </ul>
 </details>
 </nav>
+
+<script>
+(function () {
+  var jumpNavDetails = document.getElementById('jump-nav-details');
+  if (!jumpNavDetails) return;
+  var links = jumpNavDetails.querySelectorAll('a');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+      jumpNavDetails.removeAttribute('open');
+    });
+  }
+})();
+</script>
 
 <style>
 .jump-nav {
