@@ -10,6 +10,7 @@
   --brand-dark: #0f1115;
   --radius: 14px;
   --shadow: 0 10px 30px -12px rgba(15, 17, 21, 0.15);
+  --gutter: clamp(1.5rem, 4vw, 3rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,13 +59,11 @@ a {
 }
 
 .site-header__inner {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem var(--gutter);
 }
 
 .brand {
@@ -134,9 +133,7 @@ a {
 .hero__overlay {
   position: relative;
   z-index: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem 3.25rem;
+  padding: 3rem var(--gutter) 3.25rem;
   width: 100%;
 }
 
@@ -164,12 +161,10 @@ a {
 /* Layout */
 
 .layout {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
+  grid-template-columns: 260px minmax(0, 1fr);
   gap: 2.5rem;
-  padding: 2.5rem 1.5rem 4rem;
+  padding: 2.5rem var(--gutter) 4rem;
   align-items: start;
 }
 
@@ -223,9 +218,13 @@ a {
   min-width: 0;
 }
 
+.prose {
+  max-width: 840px;
+}
+
 /* Content typography */
 
-.content h1 {
+.prose h1 {
   font-size: 1.85rem;
   margin: 3rem 0 1rem;
   padding-top: 1.75rem;
@@ -233,13 +232,13 @@ a {
   scroll-margin-top: 5.5rem;
 }
 
-.content h1:first-child {
+.prose h1:first-child {
   margin-top: 0;
   padding-top: 0;
   border-top: none;
 }
 
-.content h2 {
+.prose h2 {
   font-size: 1.3rem;
   margin: 2.25rem 0 0.9rem;
   padding-left: 0.75rem;
@@ -247,35 +246,35 @@ a {
   scroll-margin-top: 5.5rem;
 }
 
-.content h3 {
+.prose h3 {
   font-size: 1.05rem;
   margin: 1.75rem 0 0.6rem;
   color: var(--ink-soft);
 }
 
-.content p,
-.content ul,
-.content ol,
-.content table {
+.prose p,
+.prose ul,
+.prose ol,
+.prose table {
   margin: 0.9rem 0;
 }
 
-.content ul,
-.content ol {
+.prose ul,
+.prose ol {
   padding-left: 1.4rem;
 }
 
-.content li + li {
+.prose li + li {
   margin-top: 0.3rem;
 }
 
-.content hr {
+.prose hr {
   border: 0;
   height: 0;
   margin: 0.5rem 0;
 }
 
-.content blockquote {
+.prose blockquote {
   border-left: 4px solid var(--accent);
   background: var(--bg);
   padding: 1rem 1.25rem;
@@ -285,7 +284,7 @@ a {
   color: var(--ink-soft);
 }
 
-.content img {
+.prose img {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -293,7 +292,7 @@ a {
   margin: 1.5rem auto;
 }
 
-.content table {
+.prose table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
@@ -301,21 +300,21 @@ a {
   display: block;
 }
 
-.content th,
-.content td {
+.prose th,
+.prose td {
   padding: 0.7rem 0.9rem;
   border-bottom: 1px solid var(--border);
   text-align: left;
   vertical-align: top;
 }
 
-.content thead th {
+.prose thead th {
   background: var(--bg);
 }
 
 /* Kit grid */
 
-.content ul.kit-grid {
+.prose ul.kit-grid {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -324,7 +323,7 @@ a {
   margin: 1.25rem 0;
 }
 
-.content ul.kit-grid li {
+.prose ul.kit-grid li {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 10px;
