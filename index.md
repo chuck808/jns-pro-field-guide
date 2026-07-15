@@ -1,10 +1,10 @@
-# JNS Pro – Field Test Guide
-
-### *A Portable Wireless BMX Performance Training System*
-
+---
+layout: default
+title: JNS Pro Field Test Guide
+description: A Portable Wireless BMX Performance Training System — field test guide.
 ---
 
-# Welcome
+# Welcome {#welcome}
 
 First of all, **thank you for helping test JNS Pro.**
 
@@ -18,7 +18,7 @@ The more naturally you use JNS Pro, the more valuable your feedback becomes.
 
 ---
 
-# Before You Ride
+# Before You Ride {#before-you-ride}
 
 ## Field Test Notes
 
@@ -50,14 +50,16 @@ If WiFi isn't available, don't worry—your session remains safely stored on the
 
 ---
 
-# Your Test Kit
+# Your Test Kit {#your-test-kit}
 
 For this field trial you'll receive a complete, ready-to-use system consisting of:
 
-- Main Controller
-- Start Lights
-- Finish Timer
-- USB-C Charging Cable
+<ul class="kit-grid">
+<li>Main Controller</li>
+<li>Start Lights</li>
+<li>Finish Timer</li>
+<li>USB-C Charging Cable</li>
+</ul>
 
 There is **no physical Gate unit** included in this version.
 
@@ -71,20 +73,22 @@ Simply charge it, power it on and start training.
 
 ---
 
-[PHOTO: Complete field test kit laid out]
+<div class="photo-pending">📷 Photo coming soon — complete field test kit laid out</div>
 
 ---
 
-# Getting Started
+# Getting Started {#getting-started}
 
 ## 1. What's in the Box
 
 Your kit contains:
 
-- Main Controller
-- Start Lights
-- Finish Timer
-- USB-C Charging Cable
+<ul class="kit-grid">
+<li>Main Controller</li>
+<li>Start Lights</li>
+<li>Finish Timer</li>
+<li>USB-C Charging Cable</li>
+</ul>
 
 Everything should already be paired and ready to use.
 
@@ -103,7 +107,7 @@ Once charged:
 - Press and hold the Main Controller power button.
 - Allow a few seconds for the system to boot.
 
-[PHOTO: Power button and USB-C charging port]
+<div class="photo-pending">📷 Photo coming soon — power button and USB-C charging port</div>
 
 ---
 
@@ -124,7 +128,7 @@ You'll see four buttons.
 
 ---
 
-# How This System Works
+# How This System Works {#how-this-system-works}
 
 One of the biggest differences between JNS Pro and a traditional timing system is that the **Main Controller is already collecting useful training data on its own.**
 
@@ -189,7 +193,7 @@ As the system grows, new hardware can be added without changing how you use the 
 
 ---
 
-# Running a Training Session
+# Running a Training Session {#running-a-training-session}
 
 Running a session is intentionally simple.
 
@@ -210,7 +214,7 @@ That's it.
 
 The rest of the system takes care of itself.
 
-[PHOTO: Gate screen ready to arm]
+![Gate screen ready to arm, showing the Start button](img/screens/gate-start.jpg)
 
 ---
 
@@ -280,7 +284,7 @@ Without the Finish Timer, speed is estimated using the controller's onboard sens
 
 The Results screen automatically returns after around 25 seconds, although you can simply tap the screen if you'd like to continue immediately.
 
-[PHOTO: Results screen]
+![Results screen showing reaction time, G-force and speed](img/screens/gate-results.jpg)
 
 ---
 
@@ -310,7 +314,7 @@ That's when you can choose whether to:
 
 Training in sessions makes it much easier to compare consistency rather than looking at isolated runs.
 
-# Session Settings
+# Session Settings {#session-settings}
 
 The majority of your day-to-day adjustments are made from the **Gate Settings** screen.
 
@@ -318,7 +322,7 @@ To open it, tap the **Settings** (gear) icon from the main Gate screen.
 
 These settings allow you to tailor JNS Pro to your preferred style of training.
 
-[PHOTO: Gate Settings screen]
+![Gate Settings screen showing the Run Setup tab](img/screens/settings-run-setup.jpg)
 
 ---
 
@@ -340,7 +344,7 @@ Most riders will only need to adjust these settings occasionally. Once you've fo
 
 ---
 
-# The Live Dashboard
+# The Live Dashboard {#live-dashboard}
 
 JNS Pro isn't just designed for the rider.
 
@@ -366,7 +370,7 @@ Simply:
 
 Within a few seconds you'll see the live session ready to go.
 
-[PHOTO: Dashboard QR screen]
+![Dashboard screen showing the QR code and WiFi connection details](img/screens/settings-dashboard-qr.jpg)
 
 ---
 
@@ -418,7 +422,7 @@ Because everything updates automatically, there's no need to stop training just 
 
 ---
 
-# Saving & Reviewing Your Sessions
+# Saving & Reviewing Your Sessions {#saving-reviewing}
 
 One of the biggest advantages of JNS Pro is that your training doesn't end when you switch the controller off.
 
@@ -434,7 +438,7 @@ When the final run in a training session has been completed, JNS Pro displays th
 - **Save & Upload**
 - **Cancel**
 
-[PHOTO: End of Session popup]
+<div class="photo-pending">📷 Photo coming soon — end of session popup</div>
 
 ### Save to SD
 
@@ -488,7 +492,7 @@ The controller gives you immediate feedback.
 
 JNS Pro Analytics helps you understand your progress over time.
 
-# Connecting to WiFi
+# Connecting to WiFi {#connecting-to-wifi}
 
 Connecting the controller to your home or club WiFi only needs to be done once.
 
@@ -513,11 +517,11 @@ That's it.
 
 The controller will remember the network for future uploads.
 
-[PHOTO: WiFi setup screen]
+![WiFi Scan screen listing nearby networks](img/screens/wifi-scan.jpg)
 
 ---
 
-# Managing Your Training Data
+# Managing Your Training Data {#managing-your-data}
 
 Every completed training session is stored safely on the SD card.
 
@@ -539,11 +543,11 @@ Depending on whether a session has already been uploaded, you'll be able to:
 
 Uploaded sessions remain available in **JNS Pro Analytics**, while the originals stay safely stored on the SD card unless you choose to remove them.
 
-[PHOTO: SD Card screen]
+![SD Card screen listing saved training sessions](img/screens/sd-card-list.jpg)
 
 ---
 
-# Troubleshooting
+# Troubleshooting {#troubleshooting}
 
 Hopefully you'll never need this section—but if something unexpected does happen, here's what the most common messages mean.
 
@@ -585,7 +589,7 @@ Those kinds of comments are often every bit as valuable as bug reports.
 
 ---
 
-# Thank You
+# Thank You {#thank-you}
 
 Thank you again for taking part in the first JNS Pro field test.
 
@@ -600,13 +604,3 @@ We genuinely appreciate the time you're investing in this project and hope you e
 Have fun, ride safe...
 
 ...and we'd love to hear how you get on.
-
----
-
-**JNS Pro**
-
-*A Portable Wireless BMX Performance Training System*
-
-**JNS Pro Analytics**
-
-https://analytics.jnspro.com
