@@ -120,7 +120,7 @@ You'll see four buttons.
 | **WiFi** | Connects the controller to your home or club WiFi so sessions can be uploaded to JNS Pro Analytics. |
 | **SD Card** | Browse, upload or delete saved training sessions. |
 
-![Home screen showing the four main buttons](img/screens/home-screen.jpg)
+![Home screen showing the four main buttons](img/screens/home-menu.jpg)
 
 ---
 
