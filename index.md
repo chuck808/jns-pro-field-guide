@@ -39,7 +39,7 @@ Your field test also includes access to **JNS Pro Analytics**, where you can rev
 
 **Website**
 
-https://analytics.jnspro.com
+[jnspro-analytics.vercel.app](https://jnspro-analytics.vercel.app/)
 
 Sessions appear here after:
 
@@ -474,7 +474,7 @@ Use this if you've been experimenting or simply don't want to keep the recorded 
 
 Once uploaded, your training sessions are available through:
 
-## https://analytics.jnspro.com
+**[jnspro-analytics.vercel.app](https://jnspro-analytics.vercel.app/)**
 
 JNS Pro Analytics provides a much richer view of your training than the controller alone.
 
@@ -586,6 +586,12 @@ If it made you stop and think...
 Likewise, if something feels awkward, confusing or could simply work better, please tell us.
 
 Those kinds of comments are often every bit as valuable as bug reports.
+
+**Contact**
+
+Send any feedback, questions or photos to:
+
+[damiennorris@hotmail.com](mailto:damiennorris@hotmail.com)
 
 ---
 
