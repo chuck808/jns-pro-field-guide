@@ -1,0 +1,1 @@
+Hardware renders in this folder are web-optimised derivatives of the supplied Fusion 360 renders. They are documentation assets only; the Fusion geometry is the hardware reference. Legacy UI screenshots elsewhere in img/screens are not used by Field Guide v2 because they depict the original interface.
