@@ -1,0 +1,49 @@
+name: Field Guide Final QA
+on:
+  push:
+    branches: [field-guide-v2-r1]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+      - name: Build exact branch
+        run: jekyll build --destination _site
+      - name: Validate current images
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          required = [
+            'img/current-ui/gate-running.webp',
+            'img/current-ui/finish-summary.webp',
+            'img/current-ui/finish-details.webp',
+            'img/current-ui/gate-settings-redesign.webp',
+            'img/current-ui/device-pairing.webp',
+            'img/hardware/JNS_Pro.jpg',
+            'img/hardware/JNS_Lights.jpg',
+            'img/hardware/JNS_Timer.jpg',
+          ]
+          for rel in required:
+              p=Path('_site')/rel
+              assert p.exists() and p.stat().st_size > 0, f'Missing {rel}'
+              with Image.open(p) as im:
+                  im.verify()
+              print('OK', rel)
+          PY
+      - name: Check rendered references
+        run: |
+          grep -q 'img/current-ui/gate-running.webp' _site/index.html
+          grep -q 'img/current-ui/finish-summary.webp' _site/index.html
+          grep -q 'img/current-ui/finish-details.webp' _site/index.html
+          grep -q 'img/current-ui/gate-settings-redesign.webp' _site/index.html
+          grep -q 'img/current-ui/device-pairing.webp' _site/index.html
