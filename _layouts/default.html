@@ -28,6 +28,7 @@
       <nav class="top-nav" aria-label="Quick links">
         <a href="#quick-start">Quick Start</a>
         <a href="#getting-started">Guide</a>
+        <a href="#device-pairing">Pairing</a>
         <a href="#troubleshooting">Troubleshooting</a>
         <a href="https://jnspro-analytics.vercel.app" class="top-nav__cta">Analytics ↗</a>
       </nav>
@@ -61,7 +62,7 @@
         </div>
         <div class="hero-status" aria-label="Field test status">
           <span class="status-dot"></span>
-          Field-test hardware · Current UI
+          Field-test hardware · Current guide
         </div>
       </div>
       <div class="v2-hero__device">
@@ -80,14 +81,14 @@
       <div class="quick-grid">
         <article class="quick-step"><span>1</span><div><strong>Power on</strong><p>Turn on the controller and the devices supplied with your kit.</p></div></article>
         <article class="quick-step"><span>2</span><div><strong>Open Gate Pro</strong><p>Use the ANO control to highlight Gate Pro and press to select.</p></div></article>
-        <article class="quick-step"><span>3</span><div><strong>Reset</strong><p>Arm the run and get into your starting position.</p></div></article>
-        <article class="quick-step"><span>4</span><div><strong>Start</strong><p>Begin the start sequence when you are ready.</p></div></article>
+        <article class="quick-step"><span>3</span><div><strong>Reset</strong><p>If RESET is shown, select it to prepare the enabled external devices.</p></div></article>
+        <article class="quick-step"><span>4</span><div><strong>Start</strong><p>Get into position and begin the start sequence when you are ready.</p></div></article>
         <article class="quick-step"><span>5</span><div><strong>Ride</strong><p>React to the sequence and ride your run normally.</p></div></article>
-        <article class="quick-step"><span>6</span><div><strong>Review</strong><p>Check your result, then continue or finish the session.</p></div></article>
+        <article class="quick-step"><span>6</span><div><strong>Review</strong><p>Check the Finish result, then continue or finish the session.</p></div></article>
       </div>
       <div class="ano-strip">
         <div class="ano-strip__icon">●</div>
-        <div><strong>ANO control</strong><span>Rotate = move · Press = select/edit · Hold only where the screen tells you to</span></div>
+        <div><strong>ANO control</strong><span>Rotate = move · Press = select/edit · Left = back/cancel · Hold only where the screen tells you to</span></div>
       </div>
     </section>
 
@@ -98,9 +99,9 @@
       </div>
       <div class="task-grid">
         <a class="task-card task-card--amber" href="#running-a-training-session"><span class="task-card__icon">▶</span><strong>Start a Run</strong><small>Reset, start sequence, abort and race flow.</small><b>Go to running a session →</b></a>
-        <a class="task-card task-card--green" href="#saving-reviewing"><span class="task-card__icon">↗</span><strong>Understand Results</strong><small>Review runs, sessions and saved performance data.</small><b>Go to results →</b></a>
+        <a class="task-card task-card--green" href="#results"><span class="task-card__icon">↗</span><strong>Understand Results</strong><small>Read the Finish summary and detailed analysis page.</small><b>Go to results →</b></a>
         <a class="task-card task-card--purple" href="#session-settings"><span class="task-card__icon">⚙</span><strong>Change Settings</strong><small>Run setup, sessions, distance, audio and devices.</small><b>Go to settings →</b></a>
-        <a class="task-card task-card--blue" href="#getting-started"><span class="task-card__icon">B</span><strong>Pair Devices</strong><small>Connect or forget the Start Gate, Lights and Timer.</small><b>Device pairing guide coming in R2 →</b></a>
+        <a class="task-card task-card--blue" href="#device-pairing"><span class="task-card__icon">B</span><strong>Pair Devices</strong><small>Connect or forget the Start Gate, Lights and Timer.</small><b>Go to pairing →</b></a>
       </div>
     </section>
 
@@ -108,7 +109,7 @@
       <div class="section-heading">
         <p class="eyebrow">Hardware</p>
         <h2 id="controller-title">Meet the Controller</h2>
-        <p>The screen shows the state. The ANO control lets you move through it without covering the display.</p>
+        <p>The display shows the state. The ANO control lets you operate the current test firmware without covering the screen.</p>
       </div>
       <div class="controller-card">
         <div class="controller-card__visual">
@@ -117,17 +118,13 @@
         <div class="controller-card__notes">
           <div><span>01</span><p><strong>Display</strong>Current run, settings, pairing and results.</p></div>
           <div><span>02</span><p><strong>ANO rotary control</strong>Rotate to move; press to select or enter edit mode.</p></div>
-          <div><span>03</span><p><strong>Touchscreen</strong>Still available for direct interaction where useful.</p></div>
+          <div><span>03</span><p><strong>Centre / directional press</strong>Confirm, go back or use a page-specific action when shown.</p></div>
           <div><span>04</span><p><strong>Status indicators</strong>At-a-glance hardware state beneath the display.</p></div>
         </div>
       </div>
     </section>
 
     <main class="content">
-      <div class="legacy-note">
-        <strong>Field Guide v2 refresh</strong>
-        <span>The quick-start shell above reflects the current JNS Pro design. The detailed reference below is being updated section-by-section to match the current firmware.</span>
-      </div>
       <div class="prose" id="prose">
         {{ content }}
       </div>
