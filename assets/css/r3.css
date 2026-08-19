@@ -1,0 +1,132 @@
+/* Field Guide v2 — R3 hardware + mobile polish */
+
+.system-section {
+  padding: 4rem var(--gutter);
+  background: #0c0f14;
+  border-top: 1px solid var(--border);
+}
+
+.system-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem;
+  max-width: var(--content-w);
+}
+
+.hardware-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+}
+
+.hardware-card__image {
+  position: relative;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1b1f27, #11151b);
+  border-bottom: 1px solid var(--border);
+}
+
+.hardware-card__image::after {
+  content: "";
+  position: absolute;
+  inset: auto 12% 0;
+  height: 34%;
+  background: radial-gradient(ellipse at center, rgba(255,176,0,.10), transparent 70%);
+  pointer-events: none;
+}
+
+.hardware-card__image img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  padding: .7rem;
+  mix-blend-mode: screen;
+}
+
+.hardware-card--lights .hardware-card__image img,
+.hardware-card--timer .hardware-card__image img {
+  padding: .35rem;
+}
+
+.hardware-card__body {
+  padding: 1rem 1.05rem 1.15rem;
+}
+
+.hardware-card__body > span {
+  display: inline-block;
+  margin-bottom: .35rem;
+  color: var(--amber);
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+.hardware-card__body h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.03rem;
+}
+
+.hardware-card__body p {
+  margin: .45rem 0 0;
+  color: var(--ink-soft);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.hardware-card--lights .hardware-card__body > span { color: var(--green); }
+.hardware-card--timer .hardware-card__body > span { color: var(--red); }
+
+.hardware-note {
+  max-width: var(--content-w);
+  margin: .8rem 0 0;
+  color: var(--ink-dim);
+  font-size: .72rem;
+}
+
+/* QR-keyring use means phone ergonomics matter more than desktop decoration. */
+@media (max-width: 900px) {
+  .system-grid { grid-template-columns: 1fr; }
+  .hardware-card {
+    display: grid;
+    grid-template-columns: minmax(190px, .8fr) minmax(0, 1.2fr);
+  }
+  .hardware-card__image { min-height: 190px; border-bottom: 0; border-right: 1px solid var(--border); }
+  .hardware-card__image img { height: 205px; }
+  .hardware-card__body { align-self: center; }
+}
+
+@media (max-width: 620px) {
+  .system-section { padding: 3rem 1rem; }
+  .system-grid { gap: .7rem; }
+  .hardware-card { display: block; }
+  .hardware-card__image { min-height: 210px; border-right: 0; border-bottom: 1px solid var(--border); }
+  .hardware-card__image img { height: 225px; }
+
+  /* Big thumb targets for a guide opened from a QR keyring. */
+  .btn,
+  .task-card,
+  .top-nav__cta,
+  .back-to-top { touch-action: manipulation; }
+  .btn { min-height: 48px; }
+  .task-card { min-height: 150px; }
+  .task-card b { font-size: .78rem; }
+
+  .quick-step { padding: .9rem; }
+  .quick-step strong { font-size: .95rem; }
+  .quick-step p { font-size: .82rem; }
+  .ano-strip span { font-size: .82rem; line-height: 1.45; }
+
+  .prose { font-size: .98rem; }
+  .prose h1 { font-size: 1.65rem; }
+  .prose h2 { font-size: 1.2rem; }
+
+  .site-header { box-shadow: 0 8px 26px rgba(0,0,0,.24); }
+}
