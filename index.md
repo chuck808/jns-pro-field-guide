@@ -100,11 +100,27 @@ This safety hold applies only when Abort is live; normal Select/Right behaviour 
 
 The running screen keeps the live timing and G-force information visible while the controller records the full-resolution run data. Navigation is intentionally locked down so that an accidental input cannot leave Gate Pro mid-run.
 
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/gate-running.webp' | relative_url }}" alt="Current Gate Pro running screen showing elapsed time and live run status" loading="lazy">
+  <figcaption>Gate Pro during a run: the display stays deliberately simple so the rider can confirm recording and elapsed time at a glance.</figcaption>
+</figure>
+
 ---
 
 # Understanding Your Results {#results}
 
 Every completed run reaches the **Finish** screen before the system moves on.
+
+<div class="guide-figure-grid">
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/finish-summary.webp' | relative_url }}" alt="Current Gate Pro Finish summary screen" loading="lazy">
+  <figcaption><strong>Finish page 1:</strong> the quick result.</figcaption>
+</figure>
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/finish-details.webp' | relative_url }}" alt="Current Gate Pro Finish details screen" loading="lazy">
+  <figcaption><strong>Finish page 2:</strong> deeper run analysis.</figcaption>
+</figure>
+</div>
 
 ## Finish page 1 — the quick result
 
@@ -156,6 +172,11 @@ When an upload is prepared, the controller saves the file first, shows a restart
 # Gate Settings {#session-settings}
 
 Gate Settings now uses a compact, ANO-first menu. The root categories are:
+
+<figure class="guide-figure guide-figure--board">
+  <img src="{{ '/img/current-ui/gate-settings-redesign.webp' | relative_url }}" alt="Current Gate Settings redesign showing the menu, Run Setup, Session, Distance and Audio Display screens" loading="lazy">
+  <figcaption>The current Gate Settings design: focused rows use amber, while edit mode makes the active value unmistakable.</figcaption>
+</figure>
 
 | Page | What it controls |
 |---|---|
@@ -212,6 +233,11 @@ An enabled device is shown as **ON**. If you try to enable hardware that has not
 # Device Pairing {#device-pairing}
 
 The current Device Pairing screen is intentionally simple: one Pair action, three device rows and one overall status area.
+
+<figure class="guide-figure guide-figure--screen guide-figure--pairing">
+  <img src="{{ '/img/current-ui/device-pairing.webp' | relative_url }}" alt="Current JNS Pro Device Pairing screen showing Start Gate, Lights and Timer connection status" loading="lazy">
+  <figcaption>Device Pairing keeps discovery and the three external-device states on one screen.</figcaption>
+</figure>
 
 ## Pairing devices with the ANO
 
