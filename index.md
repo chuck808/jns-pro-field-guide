@@ -1,612 +1,342 @@
 ---
 layout: default
-title: JNS Pro Field Test Guide
-description: A Portable Wireless BMX Performance Training System — field test guide.
+title: JNS Pro Field Guide
+summary: Current field-test guide for the JNS Pro BMX performance training system.
 ---
 
 # Welcome {#welcome}
 
-First of all, **thank you for helping test JNS Pro.**
+Thanks for helping test **JNS Pro**.
 
-You're one of the first riders to use the system outside of development, and your feedback will directly shape future versions. Every ride, every session and every comment helps us improve the system.
+This guide is written for riders, parents and coaches using the current field-test system. It is deliberately practical: get a run started, understand what the controller is telling you, and know where to look if you want to change something.
 
-This guide is designed to get you up and running as quickly as possible. It isn't intended to be a full user manual — that will come later. Instead, think of this as the guide we'd hand you at the track before saying:
+> Use JNS Pro normally. If anything feels confusing, awkward or surprising, that feedback is useful.
 
-> "Go and enjoy it. If something doesn't seem right, let us know."
+## This field-test kit
 
-The more naturally you use JNS Pro, the more valuable your feedback becomes.
-
----
-
-# Before You Ride {#before-you-ride}
-
-## Field Test Notes
-
-Please take a minute to read these before your first session.
-
-- **This is a field test, not a finished product.** You may occasionally come across something unexpected—that's exactly why we're testing.
-- **Everything has already been configured for you.** You shouldn't need to pair or configure any of the supplied hardware.
-- **Use the system normally.** Don't worry about "breaking" the software by pressing the wrong button.
-- **If something unexpected happens, make a note of it.** A quick photo of the screen and a short description of what you were doing is incredibly helpful.
-- **If the system recovers by itself, keep riding** if it's safe to do so. Knowing what happened before and after an issue often tells us more than the problem itself.
-- **There's no such thing as bad feedback.** If something feels confusing, awkward or could be improved, we'd genuinely like to hear about it.
-
----
-
-## JNS Pro Analytics
-
-Your field test also includes access to **JNS Pro Analytics**, where you can review uploaded training sessions in much greater detail.
-
-**Website**
-
-[jnspro-analytics.vercel.app](https://jnspro-analytics.vercel.app/)
-
-Sessions appear here after:
-
-1. Connecting the controller to your home or club WiFi.
-2. Selecting **Save & Upload** at the end of a session.
-
-If WiFi isn't available, don't worry—your session remains safely stored on the SD card and can be uploaded later.
-
----
-
-# Your Test Kit {#your-test-kit}
-
-For this field trial you'll receive a complete, ready-to-use system consisting of:
+The current test kit contains:
 
 <ul class="kit-grid">
-<li>Main Controller</li>
-<li>Start Lights</li>
-<li>Finish Timer</li>
-<li>USB-C Charging Cable</li>
+<li>JNS Pro Controller</li>
+<li>JNS Lights</li>
+<li>JNS Timer</li>
+<li>USB-C charging cables</li>
 </ul>
 
-There is **no physical Gate unit** included in this version.
+There is **no physical JNS Gate in this particular test kit**. That does not stop you training: the controller can record useful reaction, acceleration and G-force data on its own, while JNS Lights provides the start sequence and JNS Timer provides an external finish reference.
 
-That's completely intentional.
-
-JNS Pro is designed so that each external device can be added independently. During this field test you'll be starting from a wall, block or track stand rather than a physical gate, while still collecting meaningful reaction time, acceleration and performance data.
-
-Everything has already been connected and configured for you.
-
-Simply charge it, power it on and start training.
-
----
-
-<div class="photo-pending">📷 Photo coming soon — complete field test kit laid out</div>
+The wider JNS Pro system is modular. Gate, Lights and Timer can be enabled independently in Gate Settings.
 
 ---
 
 # Getting Started {#getting-started}
 
-## 1. What's in the Box
+## Power up
 
-Your kit contains:
+Charge the controller, JNS Lights and JNS Timer before a session, then power on the devices you intend to use.
 
-<ul class="kit-grid">
-<li>Main Controller</li>
-<li>Start Lights</li>
-<li>Finish Timer</li>
-<li>USB-C Charging Cable</li>
-</ul>
+The supplied test hardware should already be paired. If one of the devices is not available, see [Device Pairing](#device-pairing).
 
-Everything should already be paired and ready to use.
+## The ANO control
 
----
+The rotary ANO control is the normal way to operate the current test firmware.
 
-## 2. Charging & Powering On
+| Action | What it does |
+|---|---|
+| **Rotate** | Move focus through the available controls. |
+| **Centre press** | Select the focused action or enter edit mode. |
+| **Rotate while editing** | Change the selected value. |
+| **Centre press / Right** | Confirm an edit or activate the focused action. |
+| **Left** | Go back or cancel an edit. |
 
-Before your first session:
-
-- Charge the Main Controller using the USB-C connector.
-- Charge the Start Lights.
-- Charge the Finish Timer.
-
-Once charged:
-
-- Press and hold the Main Controller power button.
-- Allow a few seconds for the system to boot.
-
-<div class="photo-pending">📷 Photo coming soon — power button and USB-C charging port</div>
+Only controls that are currently valid are offered to the ANO. During an active run the interface deliberately prevents you navigating away from Gate Pro.
 
 ---
 
-## 3. The Home Screen
+# How JNS Pro Works {#how-this-system-works}
 
-Once the controller finishes booting you'll arrive at the Home screen.
+The controller contains its own IMU and records the core movement data for every run. External devices make the session more automated or add an external timing reference, but the controller remains the centre of the system.
 
-You'll see four buttons.
+The optional external units are:
 
-| Button | Purpose |
-|---------|---------|
-| **Gate** | Opens the main training screen. This is where you'll spend most of your time. |
-| **Connect** | Used for pairing external devices. You may still see this button even though everything is already paired. It only disappears once all three possible external devices (Gate, Lights and Timer) are connected. Since there isn't a Gate unit in this test, you can safely ignore it. |
-| **WiFi** | Connects the controller to your home or club WiFi so sessions can be uploaded to JNS Pro Analytics. |
-| **SD Card** | Browse, upload or delete saved training sessions. |
+- **JNS Gate** — physical start gate.
+- **JNS Lights** — start-light sequence.
+- **JNS Timer** — external finish timer.
 
-![Home screen showing the four main buttons](img/screens/home-menu.jpg)
+The controller can therefore be used with any combination of those devices.
 
----
+## Starting without a physical Gate
 
-# How This System Works {#how-this-system-works}
-
-One of the biggest differences between JNS Pro and a traditional timing system is that the **Main Controller is already collecting useful training data on its own.**
-
-Reaction time, acceleration, G-force and wheelie/pitch detection all come from sensors built directly into the controller.
-
-That means you can still carry out meaningful training sessions even if no external hardware is connected.
-
-The external devices simply make the system more accurate and more automated—they don't unlock the core training features.
-
-## Starting Without a Physical Gate
-
-You might be wondering how a BMX training system works without a physical gate.
-
-The answer is surprisingly simple.
-
-For this field test you'll start exactly as you normally would during practice:
-
-- Against a wall
-- Resting on a block
-- Holding a track stand
-- Any other consistent starting position you normally use
-
-When the start sequence reaches the point where a physical gate would normally drop, the controller has already begun measuring your reaction time and acceleration.
-
-From your point of view, simply ride away exactly as you would from a normal BMX gate.
-
-The Start Lights provide the familiar visual countdown, while the controller records your performance throughout the run.
-
----
-
-## Training Without the Finish Timer
-
-Although your field test includes a Finish Timer, it's worth knowing that JNS Pro can also be used without one.
-
-Inside **Gate Settings** you'll find a setting called **SPRINT**.
-
-This lets you enter the approximate time you expect to cover your chosen distance.
-
-Instead of ending the run when a Finish Timer beam is broken, the controller simply finishes the run after the specified time.
-
-While this isn't as accurate as using the Finish Timer, it's an excellent way to practise starts at home while still collecting useful reaction time, acceleration and G-force data.
-
-Because your kit already includes the Finish Timer, you won't normally need to use this feature—but it's there whenever you want it.
-
----
-
-## Expanding Your System
-
-JNS Pro has been designed as a modular system.
-
-The three external devices can all operate independently:
-
-- Gate
-- Start Lights
-- Finish Timer
-
-Any combination of these devices can be used.
-
-Nothing about the user interface changes depending on which hardware is connected—the controller simply detects what's available and uses it automatically.
-
-As the system grows, new hardware can be added without changing how you use the controller.
+For this field-test kit, start from a wall, block, track stand or another repeatable position. JNS Lights provides the visual start sequence and the controller records your reaction and acceleration as you leave.
 
 ---
 
 # Running a Training Session {#running-a-training-session}
 
-Running a session is intentionally simple.
+## Your first run
 
-Once everything is switched on, you're only a couple of taps away from your first run.
+1. From the main menu, open **Gate Pro**.
+2. If **RESET** is shown, select it to prepare the enabled external devices.
+3. When **START** is shown, get into position and select it when you are ready.
+4. Wait for the start sequence.
+5. Ride the run normally.
+6. Review the finish result before continuing.
 
----
+If no external devices are enabled, Gate Pro can skip the RESET stage and open directly in the ready-to-start state.
 
-## 4. Your First Run
+## Reset and Start
 
-1. From the Home screen tap **Gate**.
-2. Press **Reset** to arm the system.
-3. Press **Start** when you're ready.
-4. Wait for the countdown.
-5. Ride away exactly as you normally would.
-6. Review your results once you've finished.
+**RESET** prepares the system for a run. When the controller reaches the armed state, the live action becomes **START**.
 
-That's it.
+Selecting **START** begins the start sequence. JNS Lights follows the configured sequence when enabled, while the controller begins recording the run data used for reaction, G-force and the post-run analysis.
 
-The rest of the system takes care of itself.
+## Abort
 
-![Gate screen ready to arm, showing the Start button](img/screens/gate-start.jpg)
+When Abort is the live action, the controller requires an intentional hold rather than a quick press. The screen shows **HOLD 0.3s TO ABORT**.
 
----
+This safety hold applies only when Abort is live; normal Select/Right behaviour elsewhere is unaffected.
 
-## 5. Understanding the Start Sequence
+## During the run
 
-The Start sequence is designed to feel familiar to anyone who's ridden BMX.
+The running screen keeps the live timing and G-force information visible while the controller records the full-resolution run data. Navigation is intentionally locked down so that an accidental input cannot leave Gate Pro mid-run.
 
-### Reset
-
-Pressing **Reset** arms the system and plays a short audible warning sequence.
-
-Think of this as the point where a traditional BMX gate would be raised and everyone starts getting ready.
-
-It's your cue to settle into your preferred starting position.
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/gate-running.webp' | relative_url }}" alt="Current Gate Pro running screen showing elapsed time and live run status" loading="lazy">
+  <figcaption>Gate Pro during a run: the display stays deliberately simple so the rider can confirm recording and elapsed time at a glance.</figcaption>
+</figure>
 
 ---
 
-### Start
+# Understanding Your Results {#results}
 
-Pressing **Start** begins a short random delay followed by the familiar light sequence.
+Every completed run reaches the **Finish** screen before the system moves on.
 
-The random delay prevents anticipation and encourages genuine reaction training.
+<div class="guide-figure-grid">
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/finish-summary.webp' | relative_url }}" alt="Current Gate Pro Finish summary screen" loading="lazy">
+  <figcaption><strong>Finish page 1:</strong> the quick result.</figcaption>
+</figure>
+<figure class="guide-figure guide-figure--screen">
+  <img src="{{ '/img/current-ui/finish-details.webp' | relative_url }}" alt="Current Gate Pro Finish details screen" loading="lazy">
+  <figcaption><strong>Finish page 2:</strong> deeper run analysis.</figcaption>
+</figure>
+</div>
 
-When the sequence reaches the "gate drop" point...
+## Finish page 1 — the quick result
 
-...go.
+The first page is the at-a-glance summary:
 
-The controller is already measuring reaction time and acceleration by then.
+- **TIME** — elapsed run time.
+- **REACTION** — detected reaction time.
+- **MAX G** — maximum recorded G-force.
+- **PEAK SPEED** — calculated peak speed when the analytics pass is valid.
 
----
+This is the page to glance at between runs when you simply want to know how the attempt went.
 
-## 6. Aborting a Run
+## Finish page 2 — the detail view
 
-Sometimes things don't go to plan.
+The second page shows the acceleration curve and the deeper run metrics produced by the controller's analysis. This includes the detailed speed/acceleration and technique information used by the session data and Analytics upload.
 
-Maybe someone walks in front of you.
+Use **Right** to view the detail page and **Left** to return to the summary page.
 
-Perhaps you're not ready.
+Changing Finish pages cancels the automatic transition for that result, giving you as long as you need to inspect it. Select/centre continues when you are ready.
 
-Maybe the dog decides now is the perfect time to join the session.
+## Auto Return
 
-No problem.
-
-Simply press **Abort**.
-
-The current run is safely cancelled and nothing is recorded.
-
-You can immediately reset and try again.
-
----
-
-## 7. Understanding Your Results
-
-After each run the controller displays a summary of your performance.
-
-Depending on your setup you'll see:
-
-- **Reaction Time**
-- **Speed**
-- **Maximum G-Force**
-- **Average G-Force**
-- Wheelie / Pitch information where appropriate
-
-If the Finish Timer is connected, speed is measured directly.
-
-Without the Finish Timer, speed is estimated using the controller's onboard sensors and your configured Sprint distance.
-
-The Results screen automatically returns after around 25 seconds, although you can simply tap the screen if you'd like to continue immediately.
-
-![Results screen showing reaction time, G-force and speed](img/screens/gate-results.jpg)
+If **Auto Return** is enabled in Gate Settings, an ordinary Finish result can continue automatically after about **25 seconds**. If Auto Return is disabled, no Finish auto-transition timer is armed.
 
 ---
 
-## 8. Running Multiple Training Runs
+# Sessions {#sessions}
 
-One run is useful.
+Session Mode groups several runs together so you can compare consistency instead of treating every start as an isolated attempt.
 
-Several runs tell a much bigger story.
+The Gate Pro screen shows the current run/session count while Session Mode is enabled.
 
-If **Session Mode** is enabled, JNS Pro automatically groups multiple runs into a training session.
+## Final run of a session
 
-For example:
+The final run still shows its Finish result first. When you continue from that result, JNS Pro presents the session save choices.
 
-- 3 runs
-- 5 runs
-- 10 runs
+The available actions are:
 
-After each run the controller prepares the next one automatically.
+- **Save** — store the session on the SD card.
+- **Save & Upload** — save the session and prepare it for upload to JNS Pro Analytics.
+- **Cancel** — discard the current recorded session and reset the session counter.
 
-When the final run is complete you'll be asked what you'd like to do with the session.
+If Save & Upload is selected without saved WiFi credentials, JNS Pro falls back to saving the session locally rather than performing a pointless restart/upload attempt.
 
-That's when you can choose whether to:
-
-- Save it to the SD card.
-- Upload it to JNS Pro Analytics.
-- Or discard it completely and start again.
-
-Training in sessions makes it much easier to compare consistency rather than looking at isolated runs.
-
-# Session Settings {#session-settings}
-
-The majority of your day-to-day adjustments are made from the **Gate Settings** screen.
-
-To open it, tap the **Settings** (gear) icon from the main Gate screen.
-
-These settings allow you to tailor JNS Pro to your preferred style of training.
-
-![Gate Settings screen showing the Run Setup tab](img/screens/settings-run-setup.jpg)
+When an upload is prepared, the controller saves the file first, shows a restart message, then reboots into the upload flow with a clean heap.
 
 ---
 
-## 9. Gate Settings Explained
+# Gate Settings {#session-settings}
 
-| Setting | What it does |
-|---------|--------------|
-| **Session Mode** | Enables or disables multi-run training sessions. |
-| **Gates / Session** | Sets how many runs make up a complete training session. |
-| **Distance Tracking / Distance per Run** | Sets the distance over which speed is calculated (typically 5–30 metres in 5 metre increments). |
-| **SPRINT** | Sets a target run time when training without a Finish Timer. |
-| **G-FORCE** | Changes the displayed scale of the G-force graph. This only affects the display—it doesn't change the measurements being recorded. |
-| **Auto Transition** | Automatically prepares the next run during multi-run sessions. |
-| **Volume** | Adjusts the speaker volume. |
-| **Brightness** | Adjusts the screen brightness to suit indoor or outdoor use. |
-| **Dashboard QR** | Displays a QR code that allows phones and tablets to connect to the Live Dashboard. |
+Gate Settings now uses a compact, ANO-first menu. The root categories are:
 
-Most riders will only need to adjust these settings occasionally. Once you've found a setup you're happy with, they'll generally stay the same from session to session.
+<figure class="guide-figure guide-figure--board">
+  <img src="{{ '/img/current-ui/gate-settings-redesign.webp' | relative_url }}" alt="Current Gate Settings redesign showing the menu, Run Setup, Session, Distance and Audio Display screens" loading="lazy">
+  <figcaption>The current Gate Settings design: focused rows use amber, while edit mode makes the active value unmistakable.</figcaption>
+</figure>
+
+| Page | What it controls |
+|---|---|
+| **Devices** | Controller mode and which external Gate, Timer and Lights are enabled. |
+| **Run Setup** | G-force display range and Sprint timing setup. |
+| **Session** | Session Mode and number of runs in a session. |
+| **Distance** | Distance tracking and distance per run. |
+| **Audio / Display** | Device volume, display brightness and Auto Return. |
+| **Dashboard** | Live Dashboard QR / connection information. |
+| **Account** | Analytics account-link status and unlink action. |
+
+The focused row uses a subtle charcoal highlight, amber left marker and amber chevron. The title remains white so focus never makes the text harder to read.
+
+## Run Setup
+
+**G-FORCE** changes the visible G-force scale used by the run graph. It changes the display range, not the sensor measurement itself.
+
+**SPRINT** controls the timed-run behaviour used when you are training without an external finish timer.
+
+## Session
+
+**SESSION MODE** enables multi-run sessions.
+
+**RUNS PER SESSION** sets how many runs make up that session. When Session Mode is off, the dependent value is disabled and the ANO skips it.
+
+## Distance
+
+**DISTANCE TRACKING** enables the distance-based analysis.
+
+**DISTANCE PER RUN** supports **5, 10, 15, 20, 25 or 30 metres**. When Distance Tracking is off, the ANO skips the distance value.
+
+## Audio / Display
+
+**VOLUME** and **BRIGHTNESS** are shown as percentages but retain their existing internal hardware ranges.
+
+Select either row to edit it, rotate the ANO to adjust, then press to commit.
+
+**AUTO RETURN** controls whether a completed Finish result may advance automatically.
+
+## Devices
+
+The Devices page contains:
+
+- **CONTROLLER** — Gate trigger/controller mode.
+- **START GATE** — enable or disable the external Gate.
+- **TIMER** — enable or disable JNS Timer.
+- **LIGHTS** — enable or disable JNS Lights.
+- **CONNECT DEVICES** — open Device Pairing.
+
+An enabled device is shown as **ON**. If you try to enable hardware that has not been paired, JNS Pro rejects the request and displays a warning instead of pretending the device exists.
+
+---
+
+# Device Pairing {#device-pairing}
+
+The current Device Pairing screen is intentionally simple: one Pair action, three device rows and one overall status area.
+
+<figure class="guide-figure guide-figure--screen guide-figure--pairing">
+  <img src="{{ '/img/current-ui/device-pairing.webp' | relative_url }}" alt="Current JNS Pro Device Pairing screen showing Start Gate, Lights and Timer connection status" loading="lazy">
+  <figcaption>Device Pairing keeps discovery and the three external-device states on one screen.</figcaption>
+</figure>
+
+## Pairing devices with the ANO
+
+1. Open **Gate Settings → Devices → Connect Devices**.
+2. Focus **PAIR DEVICES**.
+3. Press the ANO centre button to begin discovery.
+4. Power on the JNS device you want to pair.
+5. Watch the Gate / Lights / Timer status dots as devices are found.
+
+Pressing Pair again can stop discovery.
+
+When all three possible external devices are paired, the overall state reports **ALL DEVICES CONNECTED**.
+
+The three rows always mean:
+
+- **G — START GATE**
+- **L — LIGHTS**
+- **T — TIMER**
+
+For this field-test kit, the Gate row may remain unpaired because no physical Gate unit is supplied.
+
+## Forgetting a device
+
+With the ANO, focus a paired device row and press Select. JNS Pro opens a confirmation dialog with **No** as the safe default and **Forget** as the destructive action.
+
+For builds where touch is enabled, holding a paired device area for about **2 seconds** performs the equivalent forget action. The large Pair control uses a **3-second touch hold** to start discovery.
+
+Pairing information is saved so the controller can restore the known-device state the next time the page is opened.
 
 ---
 
 # The Live Dashboard {#live-dashboard}
 
-JNS Pro isn't just designed for the rider.
+The Live Dashboard lets a nearby phone or tablet watch the session without crowding around the controller.
 
-Parents, coaches and spectators can also follow your session live using the built-in **Live Dashboard**.
+When the Dashboard setting is enabled, the controller can host the live dashboard and publish the current session state, live G-force, elapsed time and completed-run information.
 
-No internet connection is required.
+The dashboard can also send the same high-level **Reset**, **Start** and **Abort** commands used on the controller. Those commands still pass through Gate Pro's normal state checks; remote control does not bypass the run-state safety rules.
 
-The controller creates its own WiFi network that nearby devices can connect to.
-
----
-
-## 10. Connecting to the Live Dashboard
-
-From the **Gate Settings** screen, select **Dashboard QR**.
-
-A QR code and connection details will be displayed.
-
-Simply:
-
-1. Connect your phone to the JNS Pro WiFi network.
-2. Scan the QR code (or enter the displayed address manually).
-3. Open the dashboard in your browser.
-
-Within a few seconds you'll see the live session ready to go.
-
-![Dashboard screen showing the QR code and WiFi connection details](img/screens/settings-dashboard-qr.jpg)
-
----
-
-## 11. Watching Live Results
-
-Once connected, anyone viewing the dashboard can follow the session in real time.
-
-As each run completes they'll see information such as:
-
-- Reaction Time
-- Speed
-- G-Force
-- Session progress
-
-This makes it ideal for:
-
-- Parents
-- Coaches
-- Training partners
-- Anyone observing from the side of the track
-
-Instead of gathering around the controller after every run, everyone can follow the results from their own phone.
-
----
-
-## 12. Remote Control
-
-The Live Dashboard isn't just a display.
-
-It can also control the session remotely.
-
-From the dashboard you can:
-
-- Start
-- Reset
-- Abort
-
-This allows a coach or parent to operate the system without needing to handle the controller itself, leaving the rider free to concentrate on training.
-
----
-
-## 13. Reviewing Sessions Live
-
-The Live Dashboard also displays completed training sessions.
-
-This means a coach or parent can immediately review each run while the rider prepares for the next one.
-
-Because everything updates automatically, there's no need to stop training just to check results.
+Use **Gate Settings → Dashboard** to display the QR / connection information.
 
 ---
 
 # Saving & Reviewing Your Sessions {#saving-reviewing}
 
-One of the biggest advantages of JNS Pro is that your training doesn't end when you switch the controller off.
+Completed session files are stored on the SD card. A saved file can therefore survive a missing network connection and be uploaded later.
 
-Every completed session can be saved, reviewed and compared later.
+**Save & Upload** writes the session to SD before the upload/restart flow begins. This avoids making the network connection the only copy of the run data.
 
----
-
-## 14. Finishing a Session
-
-When the final run in a training session has been completed, JNS Pro displays three options.
-
-- **Save to SD**
-- **Save & Upload**
-- **Cancel**
-
-<div class="photo-pending">📷 Photo coming soon — end of session popup</div>
-
-### Save to SD
-
-Stores the complete training session on the controller's SD card.
-
-This is the best choice if you're somewhere without WiFi or simply want to upload the session later.
+Uploaded sessions can be reviewed in **[JNS Pro Analytics](https://jnspro-analytics.vercel.app/)**.
 
 ---
 
-### Save & Upload
+# Field Test Notes {#field-test-notes}
 
-Saves the session to the SD card **and** uploads it to **JNS Pro Analytics**.
+Please use the system naturally rather than trying to second-guess what the software expects.
 
-To free enough memory for the upload process, the controller briefly restarts before connecting to your configured WiFi network.
+If something unexpected happens, the most useful report is usually:
 
-This behaviour is completely normal.
+1. what screen you were on,
+2. what you were trying to do,
+3. what you pressed or rotated,
+4. what happened next,
+5. and, if practical, a quick photo of the controller screen.
 
-If WiFi isn't available, don't worry.
-
-Your session remains safely stored on the SD card and can be uploaded later.
-
----
-
-### Cancel
-
-Selecting **Cancel** (or tapping outside the dialog) discards the current training session and prepares the system for a fresh start.
-
-Use this if you've been experimenting or simply don't want to keep the recorded data.
-
----
-
-## 15. JNS Pro Analytics
-
-Once uploaded, your training sessions are available through:
-
-**[jnspro-analytics.vercel.app](https://jnspro-analytics.vercel.app/)**
-
-JNS Pro Analytics provides a much richer view of your training than the controller alone.
-
-Depending on future releases you'll be able to review:
-
-- Individual training sessions
-- Reaction times
-- Speed
-- G-Force
-- Session history
-- Performance trends
-- Historical comparisons
-
-The controller gives you immediate feedback.
-
-JNS Pro Analytics helps you understand your progress over time.
-
-# Connecting to WiFi {#connecting-to-wifi}
-
-Connecting the controller to your home or club WiFi only needs to be done once.
-
-Once connected, JNS Pro remembers the network and reconnects automatically whenever it's available.
-
-A WiFi connection is only required if you want to upload training sessions to **JNS Pro Analytics**.
-
-The Live Dashboard does **not** require internet access—it creates its own local WiFi network.
-
----
-
-## 16. Connecting to WiFi
-
-From the Home screen:
-
-1. Tap **WiFi**.
-2. Select your home or club network.
-3. Enter the password.
-4. Wait for the confirmation message.
-
-That's it.
-
-The controller will remember the network for future uploads.
-
-![WiFi Scan screen listing nearby networks](img/screens/wifi-scan.jpg)
-
----
-
-# Managing Your Training Data {#managing-your-data}
-
-Every completed training session is stored safely on the SD card.
-
-This means your data stays with you, even if an upload isn't possible at the time.
-
----
-
-## 17. Managing Saved Sessions
-
-From the Home screen, tap **SD Card**.
-
-Here you'll find a list of every saved training session.
-
-Depending on whether a session has already been uploaded, you'll be able to:
-
-- View saved sessions
-- Upload sessions that haven't yet been uploaded
-- Delete sessions you no longer need
-
-Uploaded sessions remain available in **JNS Pro Analytics**, while the originals stay safely stored on the SD card unless you choose to remove them.
-
-![SD Card screen listing saved training sessions](img/screens/sd-card-list.jpg)
+If a behaviour is confusing even though it technically works, please report that too. The point of field testing is not only to find crashes — it is to find places where the system fails to explain itself.
 
 ---
 
 # Troubleshooting {#troubleshooting}
 
-Hopefully you'll never need this section—but if something unexpected does happen, here's what the most common messages mean.
+## A device is missing
+
+Open **Gate Settings → Devices** and check whether that device is enabled. If it cannot be enabled because it has not been paired, open **Connect Devices** and run discovery again.
+
+## Pairing cannot find a device
+
+Make sure the external unit is powered on, stop and restart Pair Devices, and keep the unit close to the controller for the pairing attempt.
+
+## A session will not upload
+
+The session is saved to SD first. Check that WiFi has been configured, then use the saved-file/upload flow again when a network is available.
+
+## I cannot leave Gate Pro during a run
+
+That is intentional. The ANO navigation is locked to the live run action while the sequence/timing state is active so an accidental input cannot leave the page mid-run.
 
 ---
 
-## 18. Common Messages
+# JNS Pro Analytics {#analytics}
 
-| Message / Symptom | What it means |
-|-------------------|---------------|
-| **Device not linked** | The controller hasn't yet been registered with JNS Pro Analytics. Please contact us if you see this message. |
-| **No WiFi configured** | Connect the controller to your WiFi network before attempting an upload. |
-| **Upload Failed – Check WiFi** | The upload didn't complete, but your session is still safely stored on the SD card. You can upload it later. |
-| **SD Card init failed** | Remove and reinsert the SD card, then try again. |
-| **Controller briefly restarts during upload** | This is expected behaviour. The controller temporarily frees memory before uploading to JNS Pro Analytics. It will restart automatically within a few seconds. |
+JNS Pro Analytics is the longer-term view of your training data. The controller gives immediate feedback at the track; Analytics is where saved sessions can be compared and reviewed in greater detail.
 
----
-
-## 19. Reporting Issues
-
-Because this is a field test, your feedback is one of the most valuable parts of the project.
-
-If something unexpected happens, the most useful information you can provide is:
-
-- What you were doing at the time.
-- What happened.
-- Whether the system recovered by itself.
-- A photo of the screen, if possible.
-- Whether you're able to repeat the problem.
-
-Don't worry if you're unsure whether something is a bug.
-
-If it made you stop and think...
-
-...we'd probably like to know about it.
-
-Likewise, if something feels awkward, confusing or could simply work better, please tell us.
-
-Those kinds of comments are often every bit as valuable as bug reports.
-
-**Contact**
-
-Send any feedback, questions or photos to:
-
-[damiennorris@hotmail.com](mailto:damiennorris@hotmail.com)
+**[Open JNS Pro Analytics →](https://jnspro-analytics.vercel.app/)**
 
 ---
 
 # Thank You {#thank-you}
 
-Thank you again for taking part in the first JNS Pro field test.
+Thanks for putting real laps through JNS Pro.
 
-Every training session, every suggestion and every piece of feedback helps shape the future of the system.
-
-You're not just testing software...
-
-You're helping build a better training tool for BMX riders.
-
-We genuinely appreciate the time you're investing in this project and hope you enjoy using JNS Pro as much as we've enjoyed creating it.
-
-Have fun, ride safe...
-
-...and we'd love to hear how you get on.
+Bench testing tells us whether the code works. Riders tell us whether the product works.
